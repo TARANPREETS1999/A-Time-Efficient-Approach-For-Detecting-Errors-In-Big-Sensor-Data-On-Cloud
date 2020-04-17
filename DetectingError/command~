@@ -1,0 +1,6 @@
+jps
+start-all.sh
+jps
+hadoop dfs -mkdir /user/errorData
+hadoop dfs -put /home/user/Desktop/DetectingError/error_log/error_log /user/errorData
+hadoop jar /home/user/Desktop/DetectingError/NGErrorFinder.jar /user/errorData /user/errorData/output
